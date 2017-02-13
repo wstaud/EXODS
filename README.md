@@ -13,13 +13,21 @@ In short, it allows user to upload photo or choose random photo. The backend ext
 
 ## Change Log:
 ### Init
--Basic Frontend shell added
+-Basic Frontend shell added 
 
 
 ### (todo near)
 1. Finish frontend
 2. Add React
 3. Create custom JS and cleanup unused code
+3. Add Google API
 4. Add map JS
+
+### (todo far)
+1. Restyle/Update style
+2. Add contribute (open source) site
+3. Add contact site
+4. Add the project site
+5. Add social media platform. (My profile: add ability to track travel/vacation and share to other platforms)
 
 
