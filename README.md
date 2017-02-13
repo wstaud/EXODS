@@ -1,6 +1,10 @@
 # EXIF Map Capstone Project
 
-[![EXIF-Map](https://codeup-capstone.slack.com/files/xconstaud/F447R9HKM/presentation_launch.png)](https://github.com/xconstaud/exif-map)
+[![EXIF-Map](https://i.imgur.com/ABZ2X8y.png)](https://github.com/xconstaud/exif-map)
+
+[![EXIF-Map](https://i.imgur.com/HnGGKJE.png)](https://github.com/xconstaud/exif-map)
+
+
 
 This is our capstone project for Codeup. It's a website built on HTML/CSS, JS (Heavy React), PHP (larvel), MySQL and uses the Google API for the map. 
 
