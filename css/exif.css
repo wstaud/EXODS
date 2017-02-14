@@ -29,17 +29,30 @@ h1, h2, h3 {
 
 
 #cover {
-	background: #131313 url('/img/cover.gif') center center no-repeat;
-	background-size: cover;
+
 	color: white;
 	height: 100%;
 	text-align: center;
 	display: flex;
 	align-items: center;
 	overflow: hidden;
+	
 /*	border: 1px solid gray;
 	border-radius: 500px;
 	box-shadow: inset 0 0 10px rgba(0,0,0,0.5);*/
+}
+
+#video-bg {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	background-size: cover;
+	background: transparent url(video-bg.jpg) center center no-repeat;
+
 }
 
 #cover-caption {
@@ -51,26 +64,20 @@ h1, h2, h3 {
 #launch_title {
     margin-left: auto;
     margin-right: auto;
+    margin-top: 15vw;
     width: 65vw;
     padding: 0;
     opacity: .5;
-    margin-top: 15vh;
-    
-    
- 
 }
 
 #launch_subtitle {
 	font-size: 2vw;
 	margin-top: 10px;
-	
-	
-
 }
 
 #launch_scroll {
 	font-size: 2.8vw;
-	margin-top: 35vh;
+	margin-top: 30vh;
 }
 
 #arrow-down-white {
