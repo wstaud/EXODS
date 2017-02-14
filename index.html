@@ -6,17 +6,18 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
-
+		<!-- CSS Stylesheets -->
 		<link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
         <link rel="stylesheet" type="text/css" href="/css/exif.css">
 	</head>
 	<body>
-		
+		<!-- Lauch Cover Photo: Make it a live photo/video -->
 		<section id="cover">
 			<div id="cover-caption">
 				<div class="container">
+					<!-- Be careful modifying below. It's very CSS heavy margin -->
 					<div class="col">
-						<h1 id="launch_title">EXIF MAP</h1>
+						<div id="launch_title">EXODS</div>
 						<h3 id="launch_subtitle">Did you know photos contain a lot more information than just pixels?</h1>
                         <h1 id="launch_scroll">Scroll down and see for yourself.</h1>
                         <img id="arrow-down-white" src="/img/arrow-down-white.png">
@@ -25,7 +26,50 @@
 			</div>
 		</section>
 
+		<header>
+        <!-- Nav Bar -->
+            <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#">EXODS</a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/index.html">Home<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">The Project</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">My Profile</a>
+                        </li>
+                    </ul>
+
+                    <!-- <a class="social_icon my-2 my-lg-0" href="#"><img src="/img/linkedin.png"></a>
+                    <a class="social_icon my-2 my-lg-0" href="#"><img src="/img/github.png"></a>
+                    <a class="social_icon my-2 my-lg-0" href="#"><img src="/img/youtube.png"></a>
+                    <a class="social_icon my-2 my-lg-0" href="#"><img src="/img/mail.png"></a> -->
+                    <!-- Search button for later -->
+                    <!-- <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form> -->
+                </div>      
+            </nav>
+
+     <!--        <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col">
+                        <img src="/img/welcome.jpeg" class="img-fluid" alt="Responsive image">
+                    </div>    
+                </div>
+            </div> -->
+            
+        </header>
+
         <div class="container-fluid">
+        	<!-- Add functional map below -->
             <div class="earth col-lg-10 offset-lg-1">
                 
             </div>
@@ -37,7 +81,7 @@
             </div>
         </div>
 
-        
+        <!-- JS loaded in order -->
 		<script src="/jquery-3.1.1.min.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
 		<script src="/js/bootstrap.js"></script>
