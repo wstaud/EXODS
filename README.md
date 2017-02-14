@@ -1,4 +1,5 @@
-# EXIF Map Capstone Project
+# EXODS
+## EXIF Origin Data System
 
 [![EXIF-Map](https://i.imgur.com/ABZ2X8y.png)](https://github.com/xconstaud/exif-map)
 
