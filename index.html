@@ -4,22 +4,30 @@
 	<head>
 		<title>EXIF Map</title>
 		<meta charset="utf-8">
+        <!-- I do not want shrink to fit, but I do want to declare scale. -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <!-- Fixes come issues with edge -->
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
 		<!-- CSS Stylesheets -->
 		<link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
         <link rel="stylesheet" type="text/css" href="/css/exif.css">
 	</head>
 	<body>
-		<!-- Lauch Cover Photo: Make it a live photo/video -->
+		<!-- Lauch Cover Photo: The space video -->
 		<section id="cover">
+            <!-- This is a HTML5 video tag. autoplay starts it on load, loop loops it, muted kills audio, poster is the still shot incase video does not load. -->
+            <!-- you can do multiple sources of different formats. For instance, under or on top of cover2.mp4 can be a cover2.webm -->
             <video autoplay loop muted poster="/img/cover_still.png" id="video-bg">
                 <source src="/video/cover2.mp4" type="video/mp4">
             </video>
+            <!-- The container for the text on the cover -->
 			<div id="cover-caption">
+            <!-- A bootstrap container, but with a fluid tag. This enables whole page for play -->
 				<div class="container-fluid">
 					<!-- Be careful modifying below. It's very CSS heavy margin -->
+                    <!-- bootstrap col -->
 					<div class="col">
+                        <!-- launch_title is the logo image, the rest are self explanitory -->
 						<img id="launch_title" src="/img/exodsLogo.png">
 						<h3 id="launch_subtitle">Did you know photos contain a lot more information than just pixels?</h1>
                         <h1 id="launch_scroll">Scroll down and see for yourself.</h1>
@@ -28,9 +36,10 @@
 				</div>
 			</div>
 		</section>
-
+        <!-- Nav bar goes in header... always. Header within body -->
 		<header>
         <!-- Nav Bar -->
+        <!-- The Navbar stuff is all bootstrap 4 stuff. bg-inverse is bootstrap css dark background bright text. Look up documentation on bootstrap -->
             <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -70,7 +79,7 @@
             </div> -->
             
         </header>
-
+        <!-- Another fluid container, bootstrap style grid stuff under -->
         <div class="container-fluid">
         	<!-- Add functional map below -->
             <div class="earth col-lg-10 offset-lg-1">
@@ -85,6 +94,7 @@
         </div>
 
         <!-- JS loaded in order -->
+        <!-- scripts -->
 		<script src="/jquery-3.1.1.min.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
 		<script src="/js/bootstrap.js"></script>

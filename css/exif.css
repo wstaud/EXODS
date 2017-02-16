@@ -1,3 +1,5 @@
+/*All the below font-face imports fonts which I downloaded and moved to the /resources folder*/
+/*font-family declaes the family name, src: url links to location of fonts*/
 @font-face {
     font-family: coolvetica;
     src: url('/resources/coolvetica.ttf');
@@ -12,13 +14,15 @@
     src: url('/resources/alien.otf');
 }
 
-
+/*targeting html, body, h1, h2, h3 with below tags*/
+/*Set html and body to 100% so that the cover the cover and scale correct. Gives us room to fit the cover to the full size of the screen*/
 html, body {
 	height: 100%;
 	width: 100%;
 	background-color: #131313;
 }
 
+/*Called the walkway font here and give it a color*/
 h1, h2, h3 {
 	font-family: walkway;
 	color: #cac8c8;
@@ -27,7 +31,7 @@ h1, h2, h3 {
 
 
 
-
+/*This is the container for the space video. Background color does not matter right now. Ref notes below for further detail*/
 #cover {
 
 	color: white;
@@ -42,6 +46,21 @@ h1, h2, h3 {
 	box-shadow: inset 0 0 10px rgba(0,0,0,0.5);*/
 }
 
+/*Below is the space video. I'm going to do my best to explain the cover container and the video-bg (background) in the notes below*/
+/*The height in cover is set to 100% to take up the whole page and scale so that the video can be shown no matter the size of the window.
+The width does not have to be specified in the cover container because it's a block element and we set width to 100% in the html/body tag above.
+With that said, we set the video to min-width and height 100% and width/height to auto. Currently, that allows the video to fit the full size of the cover container.
+But, it's future proof as well for center scaling. I'll explain that later once we implement. But the video min is set to that so that it fits the whole page... 
+so we are really saying it can be bigger than the container... and it is. But the overflow: hidden in the cover container prevents that overflow from being shown.
+THus giving the effect that its scaling. This can be manipulated later for center scrolling. */
+/*---------------------*/
+/*The position is absolute. This allows items (such as the cover caption, etc) to easily appeaar above it and allows for easy absolute positioning
+via right/bottom and setting that to 0.... thats what scrolls the corners of the video to the browser window. In the event that the video takes a second
+to load... we added a transparent background. This can be manipulated later to add a backup gif in case the video does not load. Setting the photo to background-size cover
+will allow it to cover the whole cover container. As I said, we can add imgs and gifs to backgrounds... but not videos. IF we just were to use the gif, we could get
+away with half the code. */
+
+
 #video-bg {
 	position: absolute;
 	right: 0;
@@ -54,13 +73,16 @@ h1, h2, h3 {
 	background: transparent url(video-bg.jpg) center center no-repeat;
 
 }
-
+/*This is the container for the project title and all the text on the cover. Set it to 100% to fit full window*/
 #cover-caption {
 	width: 100%;
 	
 	
 }
-
+/*This is the project title. It is an image. So we have to center it, that's what the margin left and right do. Setting it to auto creates auto margins on both sides... causing center*/
+/*margin-top moves the title down a bit. It's in virtual width (vw) so that it moves down a bit as the page is closed. In reality, this just makes
+it look like its getting smaller. 
+Padding is set to zero to allow other text to be right on it. Opacity is self explanitory. 1.0 is no opacity*/
 #launch_title {
     margin-left: auto;
     margin-right: auto;
@@ -69,23 +91,23 @@ h1, h2, h3 {
     padding: 0;
     opacity: .5;
 }
-
+/*since this is text, we can use font-size: virtual width to adjust size. Same concept... scales with page. Margin top gives it a bit of room between it and title*/
 #launch_subtitle {
 	font-size: 2vw;
 	margin-top: 10px;
 }
-
+/*Same*/
 #launch_scroll {
 	font-size: 2.8vw;
 	margin-top: 30vh;
 }
-
+/*This is the arrow. Same as the photo*/
 #arrow-down-white {
 	width: 6vw;
-
-
 }
-
+/*This is the container for google maths. Ignore background and background size for now. margin top moves it a bit down from nav bar. 
+Height allows scale (VW concept) and width is set to 100% to take up as much room as it can. Border gives us ability to manipulate the photo
+by adding border-radius to add a curve and shadow to the photo*/
 .earth {
 	margin-top: 80px;
 	background: url('/img/earth.jpg') center center no-repeat;
@@ -98,7 +120,7 @@ h1, h2, h3 {
 
 	/*background-color: #4c4c4c;*/
 }
-
+/*This is just a standard box for where our examples, text, headings, etc will go. Same concept*/
 .examples {
 	margin-top: 80px;
 	height: 700px;
@@ -107,11 +129,11 @@ h1, h2, h3 {
 	border-radius: 5px;
 	box-shadow: inset 0 0 10px rgba(0,0,0,0.9);
 }
-
+/*This sets the text for the logo in the nav bar*/
 .navbar-brand {
 	font-family: alien;
 }
-
+/*This changes color of nav bar*/
 .bg-inverse {
 	background-color: #000000 !important;
 }
@@ -119,7 +141,7 @@ h1, h2, h3 {
 
 
 
-
+/*This allows for further manipulation once we hit a certain screen size. We can override (@) the values above with this if a condition is met*/
 @media (max-width: 700px) {
 	#launch_title {
 		font-size: 100px;
