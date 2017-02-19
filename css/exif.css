@@ -70,7 +70,7 @@ away with half the code. */
 	width: auto;
 	height: auto;
 	background-size: cover;
-	background: transparent url(video-bg.jpg) center center no-repeat;
+	background: transparent center center no-repeat;
 
 }
 /*This is the container for the project title and all the text on the cover. Set it to 100% to fit full window*/
