@@ -15,8 +15,6 @@
 	<body>
 		<!-- Lauch Cover Photo: The space video -->
 		<section id="cover">
-            <!-- This is a HTML5 video tag. autoplay starts it on load, loop loops it, muted kills audio, poster is the still shot incase video does not load. -->
-            <!-- you can do multiple sources of different formats. For instance, under or on top of cover2.mp4 can be a cover2.webm -->
             <video autoplay loop muted poster="/img/cover_still.png" id="video-bg">
                 <source src="/video/cover2.mp4" type="video/mp4">
             </video>
@@ -38,45 +36,26 @@
 		</section>
         <!-- Nav bar goes in header... always. Header within body -->
 		<header>
-        <!-- Nav Bar -->
-        <!-- The Navbar stuff is all bootstrap 4 stuff. bg-inverse is bootstrap css dark background bright text. Look up documentation on bootstrap -->
-            <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <a class="navbar-brand" href="#">EXODS</a>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="/index.html">Home<span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">The Project</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">My Profile</a>
-                        </li>
-                    </ul>
-
-                    <!-- <a class="social_icon my-2 my-lg-0" href="#"><img src="/img/linkedin.png"></a>
-                    <a class="social_icon my-2 my-lg-0" href="#"><img src="/img/github.png"></a>
-                    <a class="social_icon my-2 my-lg-0" href="#"><img src="/img/youtube.png"></a>
-                    <a class="social_icon my-2 my-lg-0" href="#"><img src="/img/mail.png"></a> -->
-                    <!-- Search button for later -->
-                    <!-- <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2" type="text" placeholder="Search">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                    </form> -->
-                </div>      
-            </nav>
-
-     <!--        <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col">
-                        <img src="/img/welcome.jpeg" class="img-fluid" alt="Responsive image">
-                    </div>    
+ 
+            <!-- slidding navbar test -->
+            <div id="exifSidenav" class="sidenav">
+                <!-- <a href="javascript:void(0)" class="closebtn" onclick="openNav()">&times;</a> --add this in later for smaller screens -->
+                <h1>EXODS</h1>
+                <a href="#">Home</a>
+                <a href="#">The Project</a>
+                <a href="#">My Profile</a>
+                <a href="#">Get Involved</a>
+                <a href="#">Contact Us</a>
+                <div class="socialContainer">
+                    <a class="socialIcon" href="#"><img src="/img/github.png"></a>
+                    <a class="socialIcon" href="#"><img src="/img/twitter.png"></a>
+                    <a class="socialIcon" href="#"><img src="/img/youtube.png"></a>
+                    <a class="socialIcon" href="#"><img src="/img/facebook.png"></a>
                 </div>
-            </div> -->
+            </div>
+            <!-- Sidebar open -->
+            <span id="slidingButton" class="slidingButton" onclick="openNav()"><img id="navIcon" src="/img/drawer_icon.png"></span>
+  
             
         </header>
         <!-- Another fluid container, bootstrap style grid stuff under -->
@@ -95,6 +74,7 @@
 
         <!-- JS loaded in order -->
         <!-- scripts -->
+        <script src="/js/page.js"></script>
 		<script src="/jquery-3.1.1.min.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
 		<script src="/js/bootstrap.js"></script>
