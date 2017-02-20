@@ -15,7 +15,7 @@ In short, it allows user to upload photo or choose a random photo. The backend e
 ## Change Log:
 ### Init
 2/13/2017:
--Basic Frontend shell added 
+- Basic Frontend shell added 
 
 2/19/2017:
 - Finished up majority of style
