@@ -20,10 +20,12 @@ var isDark = true;
 
 function themeSwitch() {
     if (isDark) {
-        document.getElementById("background").style.background = "#e8e5e5";
+        document.getElementById("background").style.background = "#f1efff";  //example of id grab
+        document.getElementsByClassName("examples")[0].style.background = "#c4c4c4"; //example of class grab
         isDark = false;
     }else {
         document.getElementById("background").style.background = "#131313";
+        document.getElementsByClassName("examples")[0].style.background = "#4c4c4c";
         isDark = true;
     }
 }
