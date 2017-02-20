@@ -22,10 +22,18 @@ function themeSwitch() {
     if (isDark) {
         document.getElementById("background").style.background = "#f1efff";  //example of id grab
         document.getElementsByClassName("examples")[0].style.background = "#c4c4c4"; //example of class grab
+        document.getElementById("sliderButton").style.left = "125px";
+        document.getElementById("sliderButton").style.background = "#3700ff";
+        document.getElementById("sliderButton").innerHTML = "Light";
+        document.getElementsByTagName("h1")[2].style.color = "black";
         isDark = false;
     }else {
         document.getElementById("background").style.background = "#131313";
         document.getElementsByClassName("examples")[0].style.background = "#4c4c4c";
+        document.getElementById("sliderButton").style.left = "0px";
+        document.getElementById("sliderButton").style.background = "#1c0084";
+        document.getElementById("sliderButton").innerHTML = "Dark";
+        document.getElementsByTagName("h1")[2].style.color = "#cac8c8";
         isDark = true;
     }
 }

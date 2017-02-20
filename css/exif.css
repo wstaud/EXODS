@@ -113,14 +113,52 @@ h1, h2, h3 {
 }
 
 .socialContainer {
+	left: 3%;
 	text-align: center;
 	position: absolute;
 	bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-.themeButton {
+/*.themeButton {
 	margin-bottom: 20px;
+}*/
+
+#sliderBackground {
+	margin-left: auto;
+	margin-right: auto;
+	background: #d1d1d1;
+	width: 100%;
+	height: 40px;
+	z-index: 10;
+	position: absolute;
+}
+
+#sliderButton {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+	line-height: 40px;
+	color: white;
+	background: #1c0084;
+	width: 125px;
+	height: 40px;
+	position: absolute;
+	z-index: 20;
+	text-align: center;
+	left: 0px;
+
 	
+}
+
+.slider {
+	position: relative;
+	width: 250px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 70px;
 }
 
 #background {
