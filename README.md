@@ -24,7 +24,7 @@ In short, it allows user to upload photo or choose a random photo. The backend e
 - Added sidebar nav:
   - Added social icons
   - Added theme switcher
-  -Changed cover to MP4 video
+  - Changed cover to MP4 video
 
 
 ### (todo near)
