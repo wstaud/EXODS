@@ -18,13 +18,13 @@ In short, it allows user to upload photo or choose a random photo. The backend e
 -Basic Frontend shell added 
 
 2/19/2017:
--Finished up majority of style
--Added mobile functionality (mostly)
--Created custom JS
--Added sidebar nav:
---Added social icons
---Added theme switcher
---Changed cover to MP4 video
+- Finished up majority of style
+- Added mobile functionality (mostly)
+- Created custom JS
+- Added sidebar nav:
+  - Added social icons
+  - Added theme switcher
+  -Changed cover to MP4 video
 
 
 ### (todo near)
