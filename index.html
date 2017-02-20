@@ -12,7 +12,7 @@
 		<link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
         <link rel="stylesheet" type="text/css" href="/css/exif.css">
 	</head>
-	<body>
+	<body id="background">
 		<!-- Lauch Cover Photo: The space video -->
         <!-- poster="/img/background3.gif"   ---Add in later -->
 		<section id="cover">
@@ -48,11 +48,15 @@
                 <a href="#">Get Involved</a>
                 <a href="#">Contact Us</a>
                 <div class="socialContainer">
+                    <div class="themeButton"> <button onclick="themeSwitch()">Change Theme</button> </div>
                     <a class="socialIcon" href="#"><img src="/img/github.png"></a>
                     <a class="socialIcon" href="#"><img src="/img/twitter.png"></a>
                     <a class="socialIcon" href="#"><img src="/img/youtube.png"></a>
                     <a class="socialIcon" href="#"><img src="/img/facebook.png"></a>
                 </div>
+<!--                 <div class="themeSlider">
+                    
+                </div> -->
             </div>
             <!-- Sidebar open -->
             <span id="slidingButton" class="slidingButton" onclick="openNav()"><img id="navIcon" src="/img/drawer_icon.png"></span>
@@ -75,10 +79,11 @@
 
         <!-- JS loaded in order -->
         <!-- scripts -->
-        <script src="/js/page.js"></script>
+        
 		<script src="/js/jquery-3.1.1.min.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
 		<script src="/js/bootstrap.js"></script>
+        <script src="/js/page.js"></script>
 
 	</body>
 </html>
