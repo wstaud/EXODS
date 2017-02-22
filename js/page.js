@@ -25,7 +25,7 @@ function themeSwitch() {
         document.getElementById("sliderButton").style.left = "125px";
         document.getElementById("sliderButton").style.background = "#3700ff";
         document.getElementById("sliderButton").innerHTML = "Light";
-        document.getElementsByTagName("h1")[2].style.color = "black";
+        document.getElementsByTagName("h1")[2].style.color = "black";  //Tag grab
         isDark = false;
     }else {
         document.getElementById("background").style.background = "#131313";
@@ -39,4 +39,20 @@ function themeSwitch() {
 }
 
 
+var mapOptions = {
+            mapTypeId: 'satellite',
+            // Set the zoom level
+            zoom: 2,
+            // This sets the center of the map at our location
+            center: {
+                lat:  29.426791,
+                lng: -98.489602
+            }
+        };
 
+
+var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+
+
+//-----------------TO DO-------------------------
+//Change from inline HTML function click calls to Javasript listeners
